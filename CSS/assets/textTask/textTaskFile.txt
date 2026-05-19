@@ -44,102 +44,102 @@
 
 
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
 selector{
-    property1:value
-    property2:value
-    property3:value
+    property1:value;
+    property2:value;
+    property3:value;
 }
