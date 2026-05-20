@@ -1,9 +1,27 @@
-div{
-    background-color: rgb(144, 207, 186);
+#full-background{
+    background-color: rgb(188, 30, 172);
 }
-p{
-    color: brown;
+
+.div-one{
+    background-color: rgb(82, 3, 50);
+    height: 100px;
 }
-h2{
-    color: rgb(161, 19, 66);
+.div-two{
+   background-color: rgb(138, 8, 86);
+   height: 100px;
+}
+.div-three{
+background-color: rgb(169, 32, 114);
+height: 100px;
+}
+.div-four{
+background-color: rgb(193, 68, 143);
+height: 100px;
+}
+.div-five{
+background-color: rgb(203, 124, 171);
+height: 100px;
+}
+p,h2{
+    color: rgb(203, 192, 192);
 }
