@@ -5,21 +5,23 @@
 }
 .parent{
     background-color: rgb(5, 63, 5);
-    height: 900px;
+    height: 695px;
     width: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
 }
 .child{
    background-color: rgb(212, 212, 180);
    height: 400px;
-   width: 400px;
-   
+   width: 300px;
    border-radius: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   overflow: hidden;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    
 }

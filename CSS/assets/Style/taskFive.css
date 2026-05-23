@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent-one, .child{
+    background-color: rgb(163, 163, 225);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.parent-two{
+    background-color: rgb(111, 111, 224);
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.parent-three{
+    background-color: rgb(74, 74, 198);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.parent-four{
+    background-color: rgb(50, 50, 173);
+    height: 200px;
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.parent-five{
+    background-color: rgb(22, 22, 168);
+    height: 200px;
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.parent-six{
+    background-color: rgb(8, 8, 111);
+    height: 200px;
+     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.child{
+    background-color: black;
+    height: 100px;
+    width: 200px;
+}
+.parent{
+    background-color: rgb(1, 4, 18);
+    color: aliceblue;
+    height: 50px;
+   text-align: center;
+   font-size: larger;
+}
