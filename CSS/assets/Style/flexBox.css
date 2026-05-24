@@ -24,4 +24,5 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   box-shadow: 6px 8px 10px;
 }

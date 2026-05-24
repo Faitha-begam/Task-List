@@ -7,7 +7,7 @@
 
 .parent-one, .child{
     background-color: rgb(163, 163, 225);
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 .parent-two{
     background-color: rgb(111, 111, 224);
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
 }
 .parent-three{
     background-color: rgb(74, 74, 198);
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,7 +34,7 @@
 }
 .parent-four{
     background-color: rgb(50, 50, 173);
-    height: 200px;
+    height: 300px;
      display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -43,7 +43,7 @@
 }
 .parent-five{
     background-color: rgb(22, 22, 168);
-    height: 200px;
+    height: 300px;
      display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -52,7 +52,7 @@
 }
 .parent-six{
     background-color: rgb(8, 8, 111);
-    height: 200px;
+    height: 300px;
      display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -61,13 +61,19 @@
 }
 .child{
     background-color: black;
-    height: 100px;
+    height: 200px;
     width: 200px;
+    border-radius: 5px;
+    border: solid whitesmoke;
+    box-shadow: 2px 3px 10px;
+    
 }
 .parent{
     background-color: rgb(1, 4, 18);
     color: aliceblue;
     height: 50px;
-   text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    font-size: larger;
 }
