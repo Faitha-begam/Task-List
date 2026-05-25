@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.text{
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+}
+.img img{
+   
+    height: 40px;
+    width: 45px;
+    margin-right: 15px;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+nav{
+    padding: 7px;
+}
+nav a {
+   padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.nav-section{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+input{
+    outline: none;
+    background-color: black;
+    border-color: white;
+    border-radius: 1px;
+    text-align: center;
+    margin-right: 60px;
+    color: white;
+    height: 40px;
+    width: 130px;
+}
+input::placeholder{
+    color: whitesmoke;
+}
+.nav-img-one{
+    padding-right: 10px;
+    height: 30px;
+    width: 40px;
+}
+.nav-img-two{
+    padding-right: 10px;
+    height: 40px;
+    width: 50px;
+}
+.nav-img-three{
+    padding-right: 10px;
+    height: 50px;
+    width: 60px;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-part-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-part-one div{
+    font-size: large;
+    font-weight: bold;
+    height: 110px;
+    width: 110px;
+    background-color: rgb(214, 208, 208);
+    border-radius: 50%;
+    padding: 40px;
+    outline:2px solid orange;
+    outline-offset: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-title{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    height: 600px;
+    width: 1520px;
+}
+.banner-part-two img{
+
+    height: 690px;
+    width: 740px;
+    padding: 30px;
+    margin-left: 10px;
+}
+.section-one-title{
+    display: flex;
+    justify-content: center;
+}
+.section-one-subtitle{
+    display: flex;
+    justify-content: center;
+}
+.section-one-card img{
+
+    margin-left: 40px;
+    height: 450px;
+    width: 450px;
+    box-shadow: 2px 3px 10px;
+    border-radius: 20px;
+}
+.section-one-card-two img{
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin-left: 40px;
+    box-shadow: 2px 5px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.trending{
+    display: flex;
+    overflow: scroll;
+    height: 400px;
+    gap: 30px;
+    background-color: white;
+    margin: 60px;
+    margin-bottom: 100px;
+}
+
+.trending img{
+    height: 300px;
+    width: 300px;
+    border-radius: 2px;
+}
+.section-two-card-two img{
+      height: 500px;
+      width: 300px;
+      margin-left: 60px;
+}
+.footer{
+    background-color: black;
+    color: rgb(168, 166, 166);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    height: auto;
+}
+.footer h3{
+    color: white;
+}
+
+.footer-rights div{
+    background-color: black;
+    color: rgb(155, 147, 147);
+    text-align: end;
+}
+.india{
+    background-color: black;
+    border: solid white 1px;
+    width: 100px;
+    padding-left: 30px;
+   margin-left: 700px;
+   padding-right:90px ;
+   padding-top: 10px;
+}
+.india h3{
+    color: white;
+   
+    
+}
