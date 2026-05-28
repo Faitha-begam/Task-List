@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 220, 220);
+}
+.navbar{
+     background-color: #051b30;
+     color: white;
+}
+.nav-part-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-part-two a{
+   color: white;
+   text-decoration: none;
+}
+.copy{
+    border: none;
+    border-style: dashed;
+    border-radius: 1px solid rgb(162, 20, 20);
+    background-color: #051b30;
+    color: white;
+}
+
+.big-div{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.thumbnail{
+    display: flex;
+   
+}
+.thumbnail-img{
+    background-image: url(https://learning.slainstitute.com/previewengine/im…0NDc2NzYzLCJ4LWNsaS16YWlkIjoiNTAwMjU0MTc4NDYifQ==);
+}
+.aside{
+    height: 700px;
+    width: 200px;
+    background-color: #051b30;
+    color: white;
+}
+.section-head{
+   display: flex;
+   gap:10px;
+   
+   
+}
