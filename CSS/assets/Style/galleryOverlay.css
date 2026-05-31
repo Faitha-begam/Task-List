@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.item{
+    position:relative;
+    overflow:hidden;
+}
+
+.item img{
+    width:100%;
+    display:block;
+    transition:0.5s;
+}
+
+.item::before{
+    content:"View";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:0.5s;
+    z-index: 1;
+}
+
+.item:hover::before{
+    opacity:1;
+}
+
+.item:hover img{
+    transform:scale(1.2);
+}

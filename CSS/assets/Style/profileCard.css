@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+.profile-card{
+    width:400px;
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    background:rgb(246, 246, 212);
+    position:relative;
+    overflow:hidden;
+    margin:auto;
+    transition: 1.5s ease;
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+.profile-card:hover{
+   transform: scale(1.15);
+   transform: rotateY(360deg);
+}
+
+.profile-card::before{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:150px;
+    background:orange;
+    top:-50px;
+    left:-50px;
+    border-radius:50%;
+    transition:0.5s;
+}
+
+.profile-card::after{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:150px;
+    background:purple;
+    bottom:-50px;
+    right:-50px;
+    border-radius:50%;
+    transition:0.5s;
+}
+button{
+
+    padding:10px 20px;
+    border:none;
+    border-radius: 5px;
+    background:#e17b5c;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:#3f1103;
+}
