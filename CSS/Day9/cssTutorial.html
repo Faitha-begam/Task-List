@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------------------------------------------ SECTION 1 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 1 : CSS Selectors</u></h1>
+
+    <h2>Universal Selector (*)</h2>
+
+    <p>
+        The universal selector selects all elements present on a webpage.
+        It is commonly used to remove default browser spacing and apply
+        common styles to every element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+*{
+    margin: 0;
+    padding: 0;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Element Selector</h2>
+
+    <p>
+        The element selector targets HTML elements using their tag names.
+        All matching elements receive the specified styles.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    color: blue;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Class Selector (.classname)</h2>
+
+    <p>
+        The class selector selects elements using their class attribute.
+        Multiple elements can share the same class name.
+        This is one of the most commonly used selectors in CSS.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    background-color: lightblue;
+}
+    </pre>
+
+    <hr>
+
+    <h2>ID Selector (#idname)</h2>
+
+    <p>
+        The ID selector targets a specific element using its unique id attribute.
+        An ID should only be used once within a webpage.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+#header{
+    background-color: black;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Descendant Selector</h2>
+
+    <p>
+        The descendant selector targets elements that are placed inside
+        another element. It is represented using a space between selectors.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container p{
+    color: red;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Child Selector (>)</h2>
+
+    <p>
+        The child selector targets only direct children of a parent element.
+        Nested grandchildren or deeper elements are not selected.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container > p{
+    color: green;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 2 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 2 : CSS Specificity</u></h1>
+
+    <h2>What is Specificity?</h2>
+
+    <p>
+        Specificity is the rule used by browsers to determine which CSS style
+        should be applied when multiple styles target the same element.
+        The selector with higher specificity takes priority.
+    </p>
+
+    <h3>Priority Order:</h3>
+
+    <pre>
+Inline CSS
+ID Selector
+Class Selector
+Element Selector
+    </pre>
+
+    <hr>
+
+    <h2>Specificity Example</h2>
+
+    <p>
+        If multiple selectors target the same element, the browser checks
+        specificity values and applies the style with the highest priority.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+#title{
+    color: red;
+}
+
+.heading{
+    color: blue;
+}
+
+h1{
+    color: green;
+}
+    </pre>
+
+    <p>
+        The text color will be red because the ID selector has higher
+        specificity than class and element selectors.
+    </p>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 3 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 3 : Typography</u></h1>
+
+    <h2>font-family</h2>
+
+    <p>
+        The font-family property defines the typeface used for displaying text.
+        Different fonts create different visual appearances and improve readability.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    font-family: Arial, sans-serif;
+}
+    </pre>
+
+    <hr>
+
+    <h2>font-size</h2>
+
+    <p>
+        The font-size property controls the size of text displayed on a webpage.
+        Larger values create bigger text while smaller values reduce text size.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+h1{
+    font-size: 32px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>font-weight</h2>
+
+    <p>
+        The font-weight property controls the thickness of text.
+        Common values include normal, bold, and numeric values.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    font-weight: bold;
+}
+    </pre>
+
+    <hr>
+
+    <h2>text-align</h2>
+
+    <p>
+        The text-align property controls the horizontal alignment of text.
+        Text can be aligned left, right, center, or justified.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+h1{
+    text-align: center;
+}
+    </pre>
+
+    <hr>
+
+    <h2>text-transform</h2>
+
+    <p>
+        The text-transform property changes the capitalization style of text.
+        It can convert text to uppercase, lowercase, or capitalize words.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+h1{
+    text-transform: uppercase;
+}
+    </pre>
+
+    <hr>
+
+    <h2>line-height</h2>
+
+    <p>
+        The line-height property controls the vertical spacing between lines of text.
+        Proper line spacing improves readability and visual appearance.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    line-height: 1.8;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 4 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 4 : Size Properties</u></h1>
+
+    <h2>width</h2>
+
+    <p>
+        The width property defines the horizontal size of an element.
+        It controls how much space an element occupies from left to right.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    width: 300px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>height</h2>
+
+    <p>
+        The height property defines the vertical size of an element.
+        It controls the amount of space occupied from top to bottom.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    height: 200px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>min-width</h2>
+
+    <p>
+        The min-width property specifies the minimum width an element can have.
+        The element will not shrink below this value.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    min-width: 250px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>max-width</h2>
+
+    <p>
+        The max-width property specifies the maximum width an element can have.
+        The element will not grow beyond this value.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    max-width: 600px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>min-height</h2>
+
+    <p>
+        The min-height property defines the minimum height an element can have.
+        It prevents the element from becoming too short.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    min-height: 200px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>max-height</h2>
+
+    <p>
+        The max-height property defines the maximum height an element can have.
+        It restricts excessive vertical growth.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    max-height: 500px;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<hr>
+<!------------------------------------------------------ SECTION 5 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 5 : Box Model</u></h1>
+
+    <h2>What is the Box Model?</h2>
+
+    <p>
+        Every HTML element is treated as a rectangular box in CSS.
+        The box model consists of Content, Padding, Border, and Margin.
+        Understanding the box model is essential for creating layouts.
+    </p>
+
+    <h3>Structure:</h3>
+
+    <pre>
+     Margin
+     Border
+     Padding
+     Content
+    </pre>
+
+    <hr>
+
+    <h2>Content</h2>
+
+    <p>
+        The content area contains the actual text, image, button,
+        or any information displayed inside the element.
+        Width and height properties directly affect this area.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    width:300px;
+    height:200px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>box-sizing</h2>
+
+    <p>
+        The box-sizing property determines how the width and height
+        of an element are calculated.
+        The border-box value includes padding and border inside the total size.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+*{
+    box-sizing:border-box;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 6 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 6 : Padding and Margin</u></h1>
+
+    <h2>Padding</h2>
+
+    <p>
+        Padding creates space between the content and the border.
+        It increases the internal spacing of an element and improves readability.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    padding:20px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Padding Directions</h2>
+
+    <p>
+        Padding can be applied individually to the top, right,
+        bottom, and left sides of an element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:10px;
+    padding-left:20px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Margin</h2>
+
+    <p>
+        Margin creates space outside an element's border.
+        It is used to separate elements from each other.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    margin:20px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>Margin Directions</h2>
+
+    <p>
+        Margin can also be applied individually to each side.
+        This allows precise control over spacing between elements.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 7 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 7 : Border Properties</u></h1>
+
+    <h2>border</h2>
+
+    <p>
+        The border property creates a visible outline around an element.
+        It requires a width, style, and color value.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    border:2px solid black;
+}
+    </pre>
+
+    <hr>
+
+    <h2>border-width</h2>
+
+    <p>
+        The border-width property controls the thickness
+        of the border surrounding an element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    border-width:5px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>border-style</h2>
+
+    <p>
+        The border-style property determines the appearance
+        of the border line.
+        Common values include solid, dashed, and dotted.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    border-style:dashed;
+}
+    </pre>
+
+    <hr>
+
+    <h2>border-radius</h2>
+
+    <p>
+        The border-radius property creates rounded corners.
+        It is commonly used in cards, buttons, and modern UI designs.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    border-radius:10px;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 8 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 8 : Display Property</u></h1>
+
+    <h2>display: block</h2>
+
+    <p>
+        Block elements occupy the entire available width by default.
+        They always start on a new line.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    display:block;
+}
+    </pre>
+
+    <hr>
+
+    <h2>display: inline</h2>
+
+    <p>
+        Inline elements only take up the space needed by their content.
+        They do not start on a new line.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+span{
+    display:inline;
+}
+    </pre>
+
+    <hr>
+
+    <h2>display: inline-block</h2>
+
+    <p>
+        Inline-block elements stay on the same line
+        while still allowing width and height properties.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+button{
+    display:inline-block;
+}
+    </pre>
+
+    <hr>
+
+    <h2>display: none</h2>
+
+    <p>
+        The none value completely hides an element from the webpage.
+        The hidden element does not occupy any space.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.menu{
+    display:none;
+}
+    </pre>
+
+    <hr>
+
+    <h2>display: flex</h2>
+
+    <p>
+        The flex value activates the Flexbox layout system.
+        It makes arranging elements easier and more responsive.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    display:flex;
+}
+    </pre>
+
+    <hr>
+
+    <h2>display: grid</h2>
+
+    <p>
+        The grid value activates the CSS Grid layout system.
+        It is used for creating complex two-dimensional layouts.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    display:grid;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 9 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 9 : Flexbox</u></h1>
+
+    <h2>display: flex</h2>
+
+    <p>
+        Flexbox is a one-dimensional layout system.
+        It arranges items in rows or columns and makes alignment easier.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    display:flex;
+}
+    </pre>
+
+    <hr>
+
+    <h2>flex-direction</h2>
+
+    <p>
+        The flex-direction property determines whether items
+        are arranged horizontally or vertically.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    flex-direction:row;
+}
+    </pre>
+
+    <hr>
+
+    <h2>justify-content</h2>
+
+    <p>
+        The justify-content property aligns items along the main axis.
+        It is commonly used to control horizontal spacing.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    justify-content:center;
+}
+    </pre>
+
+    <hr>
+
+    <h2>align-items</h2>
+
+    <p>
+        The align-items property aligns items along the cross axis.
+        It is often used for vertical centering.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    align-items:center;
+}
+    </pre>
+
+    <hr>
+
+    <h2>flex-wrap</h2>
+
+    <p>
+        The flex-wrap property allows items to move onto
+        multiple lines when there is not enough space.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    flex-wrap:wrap;
+}
+    </pre>
+
+    <hr>
+
+    <h2>gap</h2>
+
+    <p>
+        The gap property creates spacing between flex items.
+        It provides cleaner layouts than using margins.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    gap:20px;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<hr>
+<!------------------------------------------------------ SECTION 10 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 10 : CSS Grid</u></h1>
+
+    <h2>display: grid</h2>
+
+    <p>
+        CSS Grid is a two-dimensional layout system used to arrange elements
+        in rows and columns. It provides greater control over layouts compared
+        to traditional methods.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    display:grid;
+}
+    </pre>
+
+    <hr>
+
+    <h2>grid-template-columns</h2>
+
+    <p>
+        The grid-template-columns property defines the number and size
+        of columns in a grid container.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    grid-template-columns:1fr 1fr 1fr;
+}
+    </pre>
+
+    <hr>
+
+    <h2>grid-template-rows</h2>
+
+    <p>
+        The grid-template-rows property defines the height and number
+        of rows inside a grid container.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    grid-template-rows:100px 100px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>gap</h2>
+
+    <p>
+        The gap property creates spacing between grid rows and columns.
+        It helps maintain a clean and organized layout.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.container{
+    gap:20px;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 11 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 11 : CSS Units</u></h1>
+
+    <h2>px (Pixels)</h2>
+
+    <p>
+        Pixels are fixed units of measurement.
+        They provide precise control over the size of elements.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+h1{
+    font-size:32px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>% (Percentage)</h2>
+
+    <p>
+        Percentage units are relative to the size of the parent element.
+        They are commonly used in responsive layouts.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    width:50%;
+}
+    </pre>
+
+    <hr>
+
+    <h2>rem</h2>
+
+    <p>
+        The rem unit is relative to the root element's font size.
+        It provides consistent sizing throughout a webpage.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    font-size:1.5rem;
+}
+    </pre>
+
+    <hr>
+
+    <h2>em</h2>
+
+    <p>
+        The em unit is relative to the font size of the parent element.
+        It is useful for creating scalable components.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+p{
+    font-size:1.5em;
+}
+    </pre>
+
+    <hr>
+
+    <h2>vh (Viewport Height)</h2>
+
+    <p>
+        The vh unit represents a percentage of the browser window height.
+        It is commonly used for full-screen sections.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+section{
+    height:100vh;
+}
+    </pre>
+
+    <hr>
+
+    <h2>vw (Viewport Width)</h2>
+
+    <p>
+        The vw unit represents a percentage of the browser window width.
+        It is useful for responsive designs.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+section{
+    width:100vw;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 12 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 12 : Background Properties</u></h1>
+
+    <h2>background-color</h2>
+
+    <p>
+        The background-color property sets the background color of an element.
+        It is one of the most frequently used CSS properties.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    background-color:lightblue;
+}
+    </pre>
+
+    <hr>
+
+    <h2>background-image</h2>
+
+    <p>
+        The background-image property places an image behind the content
+        of an element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    background-image:url("image.jpg");
+}
+    </pre>
+
+    <hr>
+
+    <h2>background-repeat</h2>
+
+    <p>
+        The background-repeat property controls whether the background image
+        repeats across the element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    background-repeat:no-repeat;
+}
+    </pre>
+
+    <hr>
+
+    <h2>background-size</h2>
+
+    <p>
+        The background-size property controls the size of the background image.
+        The cover value fills the entire container.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    background-size:cover;
+}
+    </pre>
+
+    <hr>
+
+    <h2>background-position</h2>
+
+    <p>
+        The background-position property controls the placement
+        of a background image within an element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+div{
+    background-position:center;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 13 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 13 : Position Properties</u></h1>
+
+    <h2>position: relative</h2>
+
+    <p>
+        Relative positioning moves an element from its original location.
+        The element still occupies its original space in the layout.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.box{
+    position:relative;
+    top:20px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>position: absolute</h2>
+
+    <p>
+        Absolute positioning removes an element from the normal document flow.
+        It is positioned relative to its nearest positioned ancestor.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.box{
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>position: fixed</h2>
+
+    <p>
+        Fixed positioned elements stay in the same location even when
+        the webpage is scrolled.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.button{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+    </pre>
+
+    <hr>
+
+    <h2>position: sticky</h2>
+
+    <p>
+        Sticky positioning behaves like relative positioning until
+        a specified scroll point is reached, then behaves like fixed positioning.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.navbar{
+    position:sticky;
+    top:0;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<hr>
+<!------------------------------------------------------ SECTION 14 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 14 : Pseudo Classes</u></h1>
+
+    <h2>:hover</h2>
+
+    <p>
+        The :hover pseudo-class applies styles when the user places
+        the mouse pointer over an element. It is commonly used for
+        buttons, cards, links, and navigation menus.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+button:hover{
+    background-color:black;
+    color:white;
+}
+    </pre>
+
+    <hr>
+
+    <h2>:active</h2>
+
+    <p>
+        The :active pseudo-class applies styles while an element
+        is being clicked by the user.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+button:active{
+    transform:scale(0.95);
+}
+    </pre>
+
+    <hr>
+
+    <h2>:focus</h2>
+
+    <p>
+        The :focus pseudo-class applies styles when an input field,
+        textarea, or other interactive element receives focus.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+input:focus{
+    border:2px solid blue;
+}
+    </pre>
+
+    <hr>
+
+    <h2>:first-child</h2>
+
+    <p>
+        The :first-child pseudo-class selects the first child
+        element inside a parent element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+li:first-child{
+    color:red;
+}
+    </pre>
+
+    <hr>
+
+    <h2>:last-child</h2>
+
+    <p>
+        The :last-child pseudo-class selects the last child
+        element inside a parent element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+li:last-child{
+    color:green;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 15 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 15 : Transition and Animation</u></h1>
+
+    <h2>transition</h2>
+
+    <p>
+        The transition property creates smooth changes between
+        different states of an element. It is commonly used with
+        hover effects.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    transition:0.3s;
+}
+    </pre>
+
+    <hr>
+
+    <h2>transition-duration</h2>
+
+    <p>
+        The transition-duration property specifies how long
+        a transition effect should take to complete.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card{
+    transition-duration:1s;
+}
+    </pre>
+
+    <hr>
+
+    <h2>transform</h2>
+
+    <p>
+        The transform property changes the appearance or position
+        of an element without affecting surrounding elements.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.card:hover{
+    transform:scale(1.1);
+}
+    </pre>
+
+    <hr>
+
+    <h2>animation</h2>
+
+    <p>
+        The animation property applies a predefined keyframe
+        animation to an element.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+.box{
+    animation:move 2s infinite;
+}
+    </pre>
+
+    <hr>
+
+</section>
+
+<!------------------------------------------------------ SECTION 16 -------------------------------------------------->
+
+<section>
+
+    <h1><u>Section 16 : Media Queries</u></h1>
+
+    <h2>What are Media Queries?</h2>
+
+    <p>
+        Media queries allow developers to apply different CSS rules
+        based on screen size, device type, or viewport dimensions.
+        They are essential for creating responsive websites.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+@media(max-width:768px){
+
+}
+    </pre>
+
+    <hr>
+
+    <h2>Responsive Text</h2>
+
+    <p>
+        Media queries can adjust font sizes for smaller devices,
+        making content easier to read on mobile screens.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+@media(max-width:768px){
+
+    h1{
+        font-size:24px;
+    }
+
+}
+    </pre>
+
+    <hr>
+
+    <h2>Responsive Layout</h2>
+
+    <p>
+        Media queries can change layout structures such as
+        Flexbox and Grid to better fit smaller screens.
+    </p>
+
+    <h3>Example:</h3>
+
+    <pre>
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+}
+    </pre>
+
+    <hr>
+</body>
+</html>
