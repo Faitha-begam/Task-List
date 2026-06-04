@@ -67,8 +67,90 @@ nav a{
 .nav-btn img{
     border-radius: 20px;
 }
-main{
-    background-image: url("../CSS/assets/images/indiaImages/banner.png");
-    height: 620px;
-    width: 1550px;
+body{
+    background-image: url("../images/indiaImages/banner.png");
+    background-repeat: no-repeat;
+     background-position: right center;
+     height: 100vh;
+    background-size: cover;
+}
+.banner-section{
+    margin-top: 150px;
+    margin-left: 90px;
+}
+.above-text{
+    font-size: small;
+}
+.banner-section h1,span{
+    font-size: 100px;
+}
+.india{
+    color: rgb(10, 10, 116);
+}
+.twenty{
+    color: orange;
+}
+.fourty-seven{
+    color: green;
+}
+.btn-one{
+    background-color: rgb(10, 10, 116);
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-one:hover{
+   transform: scale(1.1);
+   background-color: transparent;
+   color: black;
+   border: 2px solid black;
+   
+}
+.btn-two{
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btn-two:hover{
+   transform: scale(1.1);
+   background-color: rgb(15, 15, 129);
+   color: white;
+}
+.pillars{
+    margin-top: 230px;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.card{
+    background-color: transparent;
+    border: none;
+    box-shadow: 8px 8px 18px rgba(1, 2, 1, 0.10);
+    border-radius: 6px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.card:hover{
+   transform: scale(1.1);
+}
+footer{
+  background-color: rgb(10, 10, 116);
+  margin-top: 70px;
+  height: 200px;
+  width: 100%;
 }
