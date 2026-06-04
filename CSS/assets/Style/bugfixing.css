@@ -1,0 +1,19 @@
+.box{
+background-color: blue;
+ width:200px;
+ height:200px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+.box-two{
+    background-color: blue;
+ width:200px;
+ height:200px;
+    display:flex;
+flex-direction:row;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
