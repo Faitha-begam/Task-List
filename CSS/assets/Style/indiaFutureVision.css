@@ -154,3 +154,13 @@ footer{
   height: 200px;
   width: 100%;
 }
+.parent-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    gap: 20px;
+}
+.footer-child{
+    margin-top: 50px;
+}
