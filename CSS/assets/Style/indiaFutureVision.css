@@ -39,6 +39,9 @@ nav a{
     font-weight: 600;
     color: rgb(10, 10, 116);
 }
+a:hover{
+    color: orange;
+}
 .title{
     font-size:x-large;
     color: rgb(10, 10, 116);
@@ -46,6 +49,12 @@ nav a{
 .sub-title{
     font-size: small;
     color: rgb(10, 10, 116);
+}
+.div-sub-head{
+    padding: 10px;
+}
+.sub-head{
+    font-size: 18px;
 }
 .nav-btn{
     display: flex;
@@ -70,6 +79,7 @@ nav a{
 body{
     background-image: url("../images/indiaImages/banner.png");
     background-repeat: no-repeat;
+    background-position: center;
      background-position: right center;
      height: 100vh;
     background-size: cover;
@@ -77,6 +87,31 @@ body{
 .banner-section{
     margin-top: 150px;
     margin-left: 90px;
+}
+.flag-line{
+    display: flex;
+    align-items: center;
+}
+.flag-line p{
+    padding-left: 5px;
+}
+
+.flag-line span{
+    width: 28px;
+    height: 2px;
+    border-radius: 5px;
+}
+
+.saffron{
+    background-color: #FF671F;
+}
+
+.white{
+    background-color: #E5E5E5;
+}
+
+.green{
+    background-color: #046A38;
 }
 .above-text{
     font-size: small;
@@ -96,33 +131,42 @@ body{
 .btn-one{
     background-color: rgb(10, 10, 116);
     color: white;
-    padding: 10px;
+    padding: 9px;
     margin-right: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
-    transition: 0.5s ease;
+   
 }
 
 .btn-one:hover{
-   transform: scale(1.1);
    background-color: transparent;
    color: black;
    border: 2px solid black;
    
 }
 .btn-two{
-    padding: 7px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 8px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.5s ease;
 }
 .btn-two:hover{
    transform: scale(1.1);
-   background-color: rgb(15, 15, 129);
+   background-color: rgb(10, 10, 116);
    color: white;
+}
+.developed{
+   color: orange;
+   font-size: 18px;
+}
+.developed-india{
+   color: green;
+   font-size: 18px;
 }
 .pillars{
     margin-top: 230px;
@@ -139,14 +183,20 @@ body{
     border: none;
     box-shadow: 8px 8px 18px rgba(1, 2, 1, 0.10);
     border-radius: 6px;
-    height: 250px;
-    width: 200px;
+    height: 280px;
+    width: 250px;
     margin: 20px;
     padding: 20px;
     transition: 0.5s ease;
 }
 .card:hover{
    transform: scale(1.1);
+}
+.card h3{
+    color: rgb(7, 7, 159);
+}
+.card a{
+    text-decoration: none;
 }
 footer{
   background-color: rgb(10, 10, 116);
@@ -156,11 +206,19 @@ footer{
 }
 .parent-footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
     align-items: center;
     gap: 20px;
+    
 }
 .footer-child{
     margin-top: 50px;
+    padding-right: 25px;
+    border-right: 1px solid orange;
+    height: 50%;
+    
+}
+.footer-section{
+    border-bottom: 5px solid orange;
 }
