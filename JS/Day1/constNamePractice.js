@@ -1,89 +1,119 @@
-const eagleNest;
-console.log(eagleNest);
+// String Values
 
-const volcanoCrater;
-console.log(volcanoCrater);
+const eagleNest = "Mountain Shelter";
+console.log(typeof(eagleNest), "Eagle Nest:", eagleNest);
 
-const spiderWeb;
-console.log(spiderWeb);
+const volcanoCrater = "Lava Basin";
+console.log(typeof(volcanoCrater), "Volcano Crater:", volcanoCrater);
 
-const crystalCave;
-console.log(crystalCave);
+const spiderWeb = "Silky Network";
+console.log(typeof(spiderWeb), "Spider Web:", spiderWeb);
 
-const honeyJar;
-console.log(honeyJar);
+const crystalCave = "Shining Chamber";
+console.log(typeof(crystalCave), "Crystal Cave:", crystalCave);
 
-const silverCoin;
-console.log(silverCoin);
+const honeyJar = "Golden Sweetness";
+console.log(typeof(honeyJar), "Honey Jar:", honeyJar);
 
-const pirateShip;
-console.log(pirateShip);
+const silverCoin = "Ancient Currency";
+console.log(typeof(silverCoin), "Silver Coin:", silverCoin);
 
-const junglePath;
-console.log(junglePath);
+const pirateShip = "Black Voyager";
+console.log(typeof(pirateShip), "Pirate Ship:", pirateShip);
 
-const cometTail;
-console.log(cometTail);
+const junglePath = "Forest Route";
+console.log(typeof(junglePath), "Jungle Path:", junglePath);
 
-const mapleLeaf;
-console.log(mapleLeaf);
+const cometTail = "Cosmic Trail";
+console.log(typeof(cometTail), "Comet Tail:", cometTail);
 
-const waterfallEdge;
-console.log(waterfallEdge);
+const mapleLeaf = "Autumn Beauty";
+console.log(typeof(mapleLeaf), "Maple Leaf:", mapleLeaf);
 
-const marbleStatue;
-console.log(marbleStatue);
 
-const dolphinFin;
-console.log(dolphinFin);
+// Number Values
 
-const cactusFlower;
-console.log(cactusFlower);
+const waterfallEdge = 120;
+console.log(typeof(waterfallEdge), "Waterfall Edge:", waterfallEdge);
 
-const pearlNecklace;
-console.log(pearlNecklace);
+const marbleStatue = 15;
+console.log(typeof(marbleStatue), "Marble Statue:", marbleStatue);
 
-const wizardTower;
-console.log(wizardTower);
+const dolphinFin = 8;
+console.log(typeof(dolphinFin), "Dolphin Fin:", dolphinFin);
 
-const velvetCurtain;
-console.log(velvetCurtain);
+const cactusFlower = 22;
+console.log(typeof(cactusFlower), "Cactus Flower:", cactusFlower);
 
-const snowflakePattern;
-console.log(snowflakePattern);
+const pearlNecklace = 500;
+console.log(typeof(pearlNecklace), "Pearl Necklace:", pearlNecklace);
 
-const lighthouseBeam;
-console.log(lighthouseBeam);
+const wizardTower = 75;
+console.log(typeof(wizardTower), "Wizard Tower:", wizardTower);
 
-const acornTree;
-console.log(acornTree);
+const velvetCurtain = 18;
+console.log(typeof(velvetCurtain), "Velvet Curtain:", velvetCurtain);
 
-const emeraldStone;
-console.log(emeraldStone);
+const snowflakePattern = 6;
+console.log(typeof(snowflakePattern), "Snowflake Pattern:", snowflakePattern);
 
-const harvestMoon;
-console.log(harvestMoon);
+const lighthouseBeam = 300;
+console.log(typeof(lighthouseBeam), "Lighthouse Beam:", lighthouseBeam);
 
-const falconFeather;
-console.log(falconFeather);
+const acornTree = 40;
+console.log(typeof(acornTree), "Acorn Tree:", acornTree);
 
-const canyonWall;
-console.log(canyonWall);
 
-const violinString;
-console.log(violinString);
+// Boolean Values
 
-const penguinColony;
-console.log(penguinColony);
+const emeraldStone = true;
+console.log(typeof(emeraldStone), "Emerald Stone:", emeraldStone);
 
-const orchidPetal;
-console.log(orchidPetal);
+const harvestMoon = false;
+console.log(typeof(harvestMoon), "Harvest Moon:", harvestMoon);
 
-const canyonRiver;
-console.log(canyonRiver);
+const falconFeather = true;
+console.log(typeof(falconFeather), "Falcon Feather:", falconFeather);
 
-const mosaicTile;
-console.log(mosaicTile);
+const canyonWall = false;
+console.log(typeof(canyonWall), "Canyon Wall:", canyonWall);
 
-const iglooEntrance;
-console.log(iglooEntrance);
+const violinString = true;
+console.log(typeof(violinString), "Violin String:", violinString);
+
+const penguinColony = false;
+console.log(typeof(penguinColony), "Penguin Colony:", penguinColony);
+
+const orchidPetal = true;
+console.log(typeof(orchidPetal), "Orchid Petal:", orchidPetal);
+
+const canyonRiver = false;
+console.log(typeof(canyonRiver), "Canyon River:", canyonRiver);
+
+const mosaicTile = true;
+console.log(typeof(mosaicTile), "Mosaic Tile:", mosaicTile);
+
+const iglooEntrance = false;
+console.log(typeof(iglooEntrance), "Igloo Entrance:", iglooEntrance);
+
+//undefined
+
+const musicBox = undefined;
+console.log(typeof(musicBox), "Music Box:", musicBox);
+
+const riverStone = undefined;
+console.log(typeof(riverStone), "River Stone:", riverStone);
+
+const cloudShadow = undefined;
+console.log(typeof(cloudShadow), "Cloud Shadow:", cloudShadow);
+
+//null
+
+const moonBridge = null;
+console.log(typeof(moonBridge), "Moon Bridge:", moonBridge);
+
+const coralIsland = null;
+console.log(typeof(coralIsland), "Coral Island:", coralIsland);
+
+const bambooForest = null;
+console.log(typeof(bambooForest), "Bamboo Forest:", bambooForest);

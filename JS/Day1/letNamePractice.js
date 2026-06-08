@@ -1,89 +1,121 @@
-let fruitBasket;
-console.log(fruitBasket);
+// String Values
 
-let oceanDepth;
-console.log(oceanDepth);
+let fruitBasket = "Apple Collection";
+console.log(typeof(fruitBasket), "Fruit Basket:", fruitBasket);
 
-let castleGate;
-console.log(castleGate);
+let oceanDepth = "Deep Blue Sea";
+console.log(typeof(oceanDepth), "Ocean Depth:", oceanDepth);
 
-let rocketLaunch;
-console.log(rocketLaunch);
+let castleGate = "Royal Entrance";
+console.log(typeof(castleGate), "Castle Gate:", castleGate);
 
-let desertStorm;
-console.log(desertStorm);
+let rocketLaunch = "Mission Alpha";
+console.log(typeof(rocketLaunch), "Rocket Launch:", rocketLaunch);
 
-let pencilCase;
-console.log(pencilCase);
+let desertStorm = "Sandy Winds";
+console.log(typeof(desertStorm), "Desert Storm:", desertStorm);
 
-let mountainPeak;
-console.log(mountainPeak);
+let pencilCase = "School Supplies";
+console.log(typeof(pencilCase), "Pencil Case:", pencilCase);
 
-let candleLight;
-console.log(candleLight);
+let mountainPeak = "Everest Summit";
+console.log(typeof(mountainPeak), "Mountain Peak:", mountainPeak);
 
-let turtleShell;
-console.log(turtleShell);
+let candleLight = "Warm Glow";
+console.log(typeof(candleLight), "Candle Light:", candleLight);
 
-let balloonRide;
-console.log(balloonRide);
+let turtleShell = "Protective Cover";
+console.log(typeof(turtleShell), "Turtle Shell:", turtleShell);
 
-let forestTrail;
-console.log(forestTrail);
+let balloonRide = "Sky Adventure";
+console.log(typeof(balloonRide), "Balloon Ride:", balloonRide);
 
-let diamondRing;
-console.log(diamondRing);
 
-let keyboardLayout;
-console.log(keyboardLayout);
+// Integer Values
 
-let bakeryOrder;
-console.log(bakeryOrder);
+let forestTrail = 120;
+console.log(typeof(forestTrail), "Forest Trail:", forestTrail);
 
-let sunsetView;
-console.log(sunsetView);
+let diamondRing = 5000;
+console.log(typeof(diamondRing), "Diamond Ring:", diamondRing);
 
-let villageMarket;
-console.log(villageMarket);
+let keyboardLayout = 104;
+console.log(typeof(keyboardLayout), "Keyboard Layout:", keyboardLayout);
 
-let helmetStrap;
-console.log(helmetStrap);
+let bakeryOrder = 25;
+console.log(typeof(bakeryOrder), "Bakery Order:", bakeryOrder);
 
-let airportRunway;
-console.log(airportRunway);
+let sunsetView = 18;
+console.log(typeof(sunsetView), "Sunset View:", sunsetView);
 
-let notebookCover;
-console.log(notebookCover);
+let villageMarket = 75;
+console.log(typeof(villageMarket), "Village Market:", villageMarket);
 
-let thunderCloud;
-console.log(thunderCloud);
+let helmetStrap = 2;
+console.log(typeof(helmetStrap), "Helmet Strap:", helmetStrap);
 
-let paintingFrame;
-console.log(paintingFrame);
+let airportRunway = 3000;
+console.log(typeof(airportRunway), "Airport Runway:", airportRunway);
 
-let dragonWing;
-console.log(dragonWing);
+let notebookCover = 150;
+console.log(typeof(notebookCover), "Notebook Cover:", notebookCover);
 
-let compassNeedle;
-console.log(compassNeedle);
+let thunderCloud = 90;
+console.log(typeof(thunderCloud), "Thunder Cloud:", thunderCloud);
 
-let treasureMap;
-console.log(treasureMap);
 
-let satelliteSignal;
-console.log(satelliteSignal);
+// Boolean Values
 
-let rainbowBridge;
-console.log(rainbowBridge);
+let paintingFrame = true;
+console.log(typeof(paintingFrame), "Painting Frame:", paintingFrame);
 
-let bambooStick;
-console.log(bambooStick);
+let dragonWing = false;
+console.log(typeof(dragonWing), "Dragon Wing:", dragonWing);
 
-let coralReef;
-console.log(coralReef);
+let compassNeedle = true;
+console.log(typeof(compassNeedle), "Compass Needle:", compassNeedle);
 
-let lanternPole;
-console.log(lanternPole);
+let treasureMap = false;
+console.log(typeof(treasureMap), "Treasure Map:", treasureMap);
 
-let glacierField;
-console.log(glacierField);
+let satelliteSignal = true;
+console.log(typeof(satelliteSignal), "Satellite Signal:", satelliteSignal);
+
+let rainbowBridge = false;
+console.log(typeof(rainbowBridge), "Rainbow Bridge:", rainbowBridge);
+
+let bambooStick = true;
+console.log(typeof(bambooStick), "Bamboo Stick:", bambooStick);
+
+let coralReef = false;
+console.log(typeof(coralReef), "Coral Reef:", coralReef);
+
+let lanternPole = true;
+console.log(typeof(lanternPole), "Lantern Pole:", lanternPole);
+
+let glacierField = false;
+console.log(typeof(glacierField), "Glacier Field:", glacierField);
+
+
+// Undefined Values
+
+let musicAlbum;
+console.log(typeof(musicAlbum), "Music Album:", musicAlbum);
+
+let coffeeMug;
+console.log(typeof(coffeeMug), "Coffee Mug:", coffeeMug);
+
+let riverBank;
+console.log(typeof(riverBank), "River Bank:", riverBank);
+
+
+// Null Values
+
+let trainTicket = null;
+console.log(typeof(trainTicket), "Train Ticket:", trainTicket);
+
+let movieScreen = null;
+console.log(typeof(movieScreen), "Movie Screen:", movieScreen);
+
+let flowerGarden = null;
+console.log(typeof(flowerGarden), "Flower Garden:", flowerGarden);
