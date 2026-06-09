@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Task 1 - Student Marks Calculator</h2>
+
+    <h2>Task 2 – Employee Salary Calculation</h2>
+
+    <h2>Task 3 – Shopping Bill</h2>
+
+    <h2> Task 4 – Restaurant Bill Split</h2>
+
+    <h2>Task 5 – Even/Odd Checker Logic</h2>
+
+    <h2>Task 6 - Area of Square</h2>
+
+    <h2>Task 7 – Bank Balance Update</h2>
+
+    <h2>Task 8 – ATM Withdrawal</h2>
+
+    <h2>Task 9 – Product Stock Update</h2>
+
+    <h2>Task 10 – Discount Calculation</h2>
+
+    <h2>Task 11 – Login Validation Result</h2>
+
+    <h2>Task 12 – Age Verification</h2>
+
+    <h2>Task 13 – Product Comparison</h2>
+
+    <h2>Task 14 – College Admission Eligibility</h2>
+
+    <h2>Task 15 – Company Access System</h2>
+
+    <h2>Final Task - do a Mini Project Using All Known Operators</h2>
+
+
+<script>
+    // Task 1 - Student Marks Calculator
+
+    let mathsMark = 90
+    let EnglishMark = 85
+    let computerMark = 95
+    let totalSubject = 3
+
+    let totalMark = mathsMark + EnglishMark + computerMark
+    console.log('Total mark:', totalMark);
+
+    let averageMark = totalMark / totalSubject
+    console.log('Average of Marks:', averageMark);
+
+
+    
+    
+    
+    // Task 2 – Employee Salary Calculation
+
+    let basicSalary = 40000
+    let bonus = 10000
+    let grossSalary = basicSalary + bonus
+    console.log('Gross Salary:', grossSalary);
+
+    
+    
+    
+    // Task 3 – Shopping Bill
+
+    let productPrice = 200
+    let quantity = 4
+    let totalAmount = productPrice * quantity
+    console.log('Total Amount:', totalAmount);
+
+
+    
+    
+    // Task 4 – Restaurant Bill Split
+
+    let totalBill = 5500
+    let friendsCount = 5
+    let amountPerPerson = totalBill / friendsCount
+    console.log('Amount Per Person:', amountPerPerson);
+
+    
+    
+    // Task 5 – Even/Odd Checker Logic
+
+    let number = 25
+    let reminder = number % 2
+    console.log('Number is:', reminder, '- odd');
+
+    
+    // Task 6 – Area of Square
+
+    let side = 5
+    let areaValue = side ** 2
+    console.log('Area of Square:', areaValue);
+    
+    
+    
+    // Task 7 – Bank Balance Update
+
+    let balanceAmount = 10000
+    let depositAmount = 2000
+
+    balanceAmount += depositAmount
+    console.log('Total Balance:', balanceAmount);
+
+   
+   
+   
+    // Task 8 – ATM Withdrawal
+
+    let balance = 5000
+    let Withdrawal = 1000
+
+    balance -= Withdrawal
+    console.log('Remaining Amount:', balance);
+
+    
+    
+    
+    // Task 9 – Product Stock Update
+
+    let stock = 10
+    let increasedStock = 5
+
+    stock *= increasedStock
+    console.log('Current Total Stock:', stock);
+
+    
+    
+    
+    // Task 10 – Discount Calculation
+
+    let originalPrice = 2000
+    let discountAmount = 200
+
+    originalPrice /= 200
+    console.log('Amount After Discount:', originalPrice);
+
+    
+    
+    
+    // Task 11 – Login Validation Result
+
+    let username1 = "admin"
+    let username2 = "admin"
+
+    console.log('does it Equal (==) ?:', username1 == username2);
+    console.log('does it Equal (===) ?:', username1 === username2);
+
+    
+    
+    
+    
+    // Task 12 – Age Verification
+
+    let userAge = 18
+    console.log(20 < 18);
+    console.log(12 > 18);
+    console.log(18 >= 18);
+    console.log(20 <= 18);
+
+    
+    
+    
+    // Task 13 – Product Comparison
+
+    let price1 = 1000
+    let price2 = 1500
+    let isEqual = price1 != price2
+    console.log('Not Equal(!=)?', isEqual);
+
+    
+    
+    
+    // Task 14 – College Admission Eligibility
+
+    let mark = 85
+    let hasCertificate = true
+
+    console.log('does the Student get Certified?', mark > 80 && hasCertificate);
+
+    
+    
+    
+    // Task 15 – Company Access System
+
+    let isAdmin = false
+    let isHR = true
+    let isBlocked = false
+
+    let accessGranted = isAdmin || isHR && !isBlocked
+    console.log('Does Access Granted?', accessGranted);
+
+    
+    
+    
+    // Final Task
+
+    let studentName = "Faitha";
+    let mark1 = 85;
+    let mark2 = 75;
+    let mark3 = 90;
+
+    console.log("Student Name:", studentName);
+
+    console.log("Addition:", mark1 + mark2);
+    console.log("Subtraction:", mark1 - mark2);
+    console.log("Multiplication:", mark1 * mark2);
+    console.log("Division:", mark1 / mark2);
+    console.log("Modulus:", mark1 % mark2);
+    console.log("Exponent:", mark1 ** 2);
+
+    let totalMarks = mark1;
+
+    totalMarks += mark2;
+    console.log("+= :", totalMarks);
+
+    totalMarks -= 10;
+    console.log("-= :", totalMarks);
+
+    totalMarks *= 2;
+    console.log("*= :", totalMarks);
+
+    totalMarks /= 5;
+    console.log("/= :", totalMarks);
+
+
+    console.log("== :", mark1 == mark2);
+    console.log("=== :", mark1 === mark2);
+    console.log("!= :", mark1 != mark2);
+    console.log("> :", mark1 > mark2);
+    console.log("< :", mark1 < mark2);
+    console.log(">= :", mark1 >= mark2);
+    console.log("<= :", mark1 <= mark2);
+
+    let passedMark1 = mark1 >= 35;
+    let passedMark2 = mark2 >= 35;
+    let failedMark3 = mark3 < 35;
+
+    console.log("&& :", passedMark1 && passedMark2);
+    console.log("|| :", passedMark1 || failedMark3);
+    console.log("! :", !failedMark3);
+
+</script>
+</body>
+</html>
