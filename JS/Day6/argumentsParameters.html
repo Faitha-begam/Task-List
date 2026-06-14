@@ -1,0 +1,69 @@
+<script>
+    // Task 1 - Print all hero names using a loop.
+    let arr = ["Vijay","Ajith","Suriya","SK"]
+    for(let a = 0; a<=arr.length-1; a++){
+        console.log(arr[a]);
+    }
+
+    // Task 2 - Find the highest collection.
+    function high(array){
+        let highest = array[0]
+    for(let a =0; a<array.length; a++){
+        if (highest<array[a]) {
+             highest = array[a]
+        }
+    }
+    return highest
+    }
+    console.log('highest collection:', high([200,500,800,400,600]));
+
+    // Task 3 - Find the lowest collection.
+     function low(array){
+        let lowest = array[0]
+    for(let a =0; a<array.length; a++){
+        if (lowest>array[a]) {
+            lowest = array[a]
+        }
+    }
+    return lowest
+    }
+    console.log('highest collection:', low([200,500,800,400,600]));
+
+    // Task 4 - Find total collection.
+    function total(array){
+        let result = 0
+    for(let a=0; a<array.length; a++){
+        result = result + array[a] 
+    }
+    return result
+    }    
+    console.log('total:', total([200,500,800,400,600]));
+    
+
+
+    // Task 5 - Find average collection.
+    function avg(array){
+        let total = array.length
+        let totalSum = 0
+        for(let a=0; a<array.length; a++){
+            totalSum = totalSum+array[a]
+            let average = totalSum/total
+        }
+        return average
+    }
+    console.log('Average:', avg([200,500,800,400,600]));
+
+
+    // Task 6 - Print all hero names in reverse order.
+    function rev(array){
+       let first = array[0]
+       let last = array.length
+
+       for(let a=0; a<array.length; a++){
+          
+       }
+    }
+
+    // Task 7 - 
+    
+</script>
