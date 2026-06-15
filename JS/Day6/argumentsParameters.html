@@ -71,6 +71,123 @@
      }
      console.log('reversed array:', rev(["Vijay","Ajith","Suriya","SK"]));
      
-    // Task 7 - 
+    // Task 7 - Create an array of fruits - Find a Fruit
+    let fruits = ["Apple","Mango","Orange","Banana"]
+    for(let a = 0; a<fruits.length; a++){
+       if(fruits[a]=="Mango"){
+        console.log("fruit found",fruits[a])
+        }
+    }
     
-</script>
+    // Task 8 - Count total fruits without using .length in output.
+    let fruitsName = ["Apple","Mango","Orange","Banana"]
+    let length = 0
+    for(let a = 0; a<fruitsName.length; a++){
+       length += 1
+    }
+    console.log(length);
+
+    // Task - 9 - Find the longest hero name.
+    let heros = ["Vijay","Ajith","Sivakarthikeyan","D'Na"]
+    let longest = heros[0]
+    for(let a = 0; a<heros.length; a++){
+        if(heros[a].length>longest.length){
+            longest = heros[a]
+            console.log('longest name:',heros[a]);
+        }
+    }
+
+    // Task 10 - Create a program to check whether a movie name is a palindrome.
+    let movie = "LEVEL"
+    let reversed = ""
+    while (movie != null){
+        for(let a=movie.length; a>movie.length; a--){
+            reversed += movie[a]
+            if(movie == reversed){
+              console.log('Palindrome');
+            }
+            else{
+                console.log('Not Palindrome');
+            }
+        }
+    }
+    
+    // Task 11 - Create a program to reverse a hero name.
+    let hero = "VIJAY"
+    let reversedString = ""
+    while (hero != null){
+        for(let a=hero.length; a>hero.length; a--){
+            reversedString += hero[a]
+        }
+    }
+    console.log('reversed string:', reversedString);
+    
+
+    // Task 12 - Print first 10 Fibonacci numbers.
+    let first = 0 
+    let second = 1
+    let result = 0
+    console.log(first);
+    console.log(second);
+    for(let a=0; a<=10; a++){
+        result = first + second
+        first = second
+        second = result
+      console.log(result);
+    }
+
+    // Task 13 - Create a program to count vowels in a hero name.
+    let heroName = "SURIYA"
+    let vowels = "aeiouAEIOU"
+    let vowelCount = 0
+    for(let a=heroName.length; a<heroName.length; a++){
+       if(vowels in heroName){
+          vowelCount += 1
+       }
+       console.log(vowelCount);
+    }
+
+    // Task 14 - Create a program to count how many times a character appears.
+    let heroName2 = "SURIYA"
+    let freq = {}
+    for(let a = 0; a<heroName2.length; a++){
+        freq += 1
+    }
+    console.log('a');
+
+    // Task 15 - Check whether both words contain the same characters.
+    let word = 'listen'
+    let firstFreq = {}
+    for(let a=0; a<word.length; a++){
+        firstFreq += 1
+    }
+    let word2 = "Silent"
+    let secondFreq = {}
+    for(let b=0; b<word2.length; b++){
+        secondFreq += 1
+    }
+    if(firstFreq == secondFreq){
+        console.log('Anagram');
+    }
+    else{
+        console.log('Not Anagram');
+    }
+
+    // Task 16 - Armstrong Number
+    let num = 153
+    let digit = 0
+    let expo = 0
+    let sum
+    for(let a=num; a<num.length; a++){
+       digit = num % 10
+       expo = digit**num.length
+       sum += expo 
+       num = num/10
+       if (sum == num) {
+        console.log('Amstrong Number');
+        }
+        else{
+        console.log('not anagram');
+        }
+    }
+    </script>
