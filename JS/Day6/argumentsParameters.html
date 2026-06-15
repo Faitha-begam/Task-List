@@ -45,9 +45,10 @@
     function avg(array){
         let total = array.length
         let totalSum = 0
+        let average = 0
         for(let a=0; a<array.length; a++){
             totalSum = totalSum+array[a]
-            let average = totalSum/total
+            average = totalSum/total
         }
         return average
     }
@@ -55,15 +56,21 @@
 
 
     // Task 6 - Print all hero names in reverse order.
-    function rev(array){
-       let first = array[0]
-       let last = array.length
-
-       for(let a=0; a<array.length; a++){
-          
-       }
-    }
-
+     function rev(array){
+        let first = 0
+        let last = array.length-1
+        
+        while (first<last){
+            let temp = array[first]
+            array[first] = array[last]
+            array[last] = temp
+            first++
+            last--
+        }
+        return array
+     }
+     console.log('reversed array:', rev(["Vijay","Ajith","Suriya","SK"]));
+     
     // Task 7 - 
     
 </script>
