@@ -1,16 +1,57 @@
 <script>
-    const banking = (amount)=>{
-        let balance = amount
-
-        const savings = (credit)=>{
-            let balance = balance + credit
-            console.log(balance);
-            
-        }
-        return savings
+// Task 1 - scope task
+function practice(num){ 
+let hero = "Vijay";
+for (let a=0; a<num; a++){
+if(true){
+    console.log("inside condition block" + hero);
     }
-    let currentAmount =  
-    banking
-    
+    console.log( "inside loop" + hero);
+  }
+  
+  console.log("inside the function" + hero);
+  
+}
+practice(1)
+
+
+// Task 2
+const movie =()=>{
+    let collection = 800
+}
+console.log(collection);
+
+
+// Task 3
+if(true){
+      
+    var actor1 = "Ajith"
+    let actor2 = "Vijay"
+}
+console.log(actor1);
+console.log(actor2);
+
+// actor1 is declared using var, which has function scope. Since it is not inside a function, it becomes accessible outside the block.
+// actor2 is declared using let, which has block scope. Therefore, it can only be accessed inside the if block. so it throw an error "Reference Error"
+
+
+// Task 4 - Named Function Tasks
+const showMovie = ()=>{
+    console.log("GOAT Movie Released");
+}
+
+// Task 5 - Create a named arrow function:
+const add = (a,b)=>{
+   let c = a+b
+}
+add(1,3)
+
+// Task 6 - Anonymous Function Tasks
+const bookMovie = ()=>{
+       const book = ()=>{ 
+        console.log("Booking Confirmed");
+        
+       }
+}
 
 </script>
