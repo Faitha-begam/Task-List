@@ -44,3 +44,63 @@ else{
     taskFivePara.innerHTML = "Invalid User"
 }
 }
+
+// Task 6
+const plength =()=>{
+const taskSixInput = document.getElementById("tasksixinput").value
+const taskSixP = document.getElementById("tasksixp")
+if(taskSixInput.length >= 8){
+    taskSixP.innerText = "Strong Password"
+}
+else{
+    taskSixP.innerText = "Weak Password"
+}
+}
+
+// Task 7
+const mergeName =()=>{
+    const taskSevenInputOne = document.getElementById("taskseveninputone").value
+    const taskSevenInpuTwo = document.getElementById("taskseveninputwo").value
+    const taskSevenH = document.getElementById("tasksevenh")
+
+    taskSevenH.textContent = "Full Name : " + taskSevenInputOne + " " + taskSevenInpuTwo
+}
+
+// Task 8
+const wake = ()=>{
+    const catImageOne = document.getElementById("catImageOne")
+    const taskEightP = document.getElementById("taskeightp")
+    
+    catImageOne.src = "../assets/images/common/awakeCat.jpg"
+    taskEightP.innerText = "I Said Don't"
+}
+
+// Task 9
+const change =()=>{
+    const taskNineH = document.getElementById("tasknineh")
+
+    taskNineH.style.color = "brown"
+    taskNineH.innerText = "I'm Brown now 🤎"
+}
+
+// Task 10
+const check =()=>{
+    const taskTenInput = document.getElementById("taskteninput").value
+    const taskTenP = document.getElementById("tasktenp") 
+    if(taskTenInput === ""){
+       taskTenP.innerText = "Please Enter Value"
+    }
+    else{
+    taskTenP.innerText = "Form Submitted"
+    }  
+}
+
+// Task 11
+ let count = 0
+const increase =()=>{
+    const lastTaskH = document.getElementById("lastTaskH")
+   
+        count++
+        lastTaskH.innerText = "count : " + count
+    
+}
