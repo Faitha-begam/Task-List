@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+    <table>
+
+        <thead>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+
+
+
+    <script>
+        // create async function
+        const takeData = async()=>{
+
+        // create await 
+        const getData = await fetch("https://dummyjson.com/products")
+        
+        
+        // convert to json with await
+        const convertData = await getData.json()
+        
+        
+        // get store the converted data inside a variable
+        const resultData = convertData.products
+        console.log(resultData)
+        
+
+        const tableData = document.getElementById("tableData")
+        
+        // loop the details stored in previous step, use innerHtml to show results on screen 
+        resultData.forEach((e,i)=>{
+               tableData.innerHTML +=  `
+                    <tr>
+                    <td>${i+1}</td>
+                    <td>${e.title}</td>
+                    <td>${e.Category}</td>
+                    <td>${e.Price}</td>
+                    </tr>
+               `
+            })
+        
+        }
+       
+    takeData()
+    </script>
+</body>
+</html>
