@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch</title>
+    <link rel="stylesheet" href="fetchPractice.css">
 </head>
 <body>
     
-    <table>
+    <!-- <table>
 
         <thead>
             <th>S.NO</th>
@@ -18,7 +19,18 @@
         <tbody id="tableData">
 
         </tbody>
-    </table>
+
+        <tr>
+                    <td>${i+1}</td>
+                    <td>${e.title}</td>
+                    <td>${e.category}</td>
+                    <td>${e.price}</td>
+                    </tr>
+
+    </table> -->
+    
+
+    <div id="cardContainer"> </div>
 
 
 
@@ -39,17 +51,17 @@
         console.log(resultData)
         
 
-        const tableData = document.getElementById("tableData")
+        const cardContainer = document.getElementById("cardContainer")
         
         // loop the details stored in previous step, use innerHtml to show results on screen 
         resultData.forEach((e,i)=>{
-               tableData.innerHTML +=  `
-                    <tr>
-                    <td>${i+1}</td>
-                    <td>${e.title}</td>
-                    <td>${e.Category}</td>
-                    <td>${e.Price}</td>
-                    </tr>
+               cardContainer.innerHTML +=  `
+                    <div class="card">
+                    <h3>${e.title}</h3>
+                    <p>Category:${e.category}</p>
+                    <p>Category:${e.price}</p>
+                    <p>Category:${e.category}</p>
+                    </div>
                `
             })
         
