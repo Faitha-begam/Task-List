@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extra Task </title>
 </head>
+
 <body>
-    
+
 
     <script>
 
-        let x = 121
+        console.log("TASK 1 - Palindrome Check");
+
+
+        let x = 1221
+        let y = x.toString()
         let left = 0
-        let right = x.length -1
-        while (left<right){
-            if(left == right){
-                console.log("palindrome");
-                left++
-                right--
+        let right = y.length - 1
+        let isPalindrome = true
+        while (left < right) {
+            if (y[left] !== y[right]) {
+                isPalindrome = false
+                break
+            }
+            left++
+            right--
+        }
+        if (isPalindrome) {
+            console.log('Palindrome');
+        }
+        else {
+            console.log('Not Palindrome');
+        }
+
+
+
+        console.log("TASK 2 -  Product Inventory");
+
+        const products = [
+            { id: 1, name: "Laptop", stock: 5 },
+            { id: 2, name: "Mobile", stock: 0 },
+            { id: 3, name: "Watch", stock: 8 },
+            { id: 4, name: "Keyboard", stock: 0 }
+        ]
+        let count = 0
+        let stockCount = 0
+        let outOfStock = 0
+        for (const product in products) {
+            count++
+
+            if (products[product].stock > 0) {
+                stockCount++
+            }
+            else {
+                outOfStock++
+            }
+        }
+        console.log("Total Products: " + count);
+        console.log("Available Products: " + stockCount);
+        console.log("Out of Stock Products: " + outOfStock);
+
+
+        console.log("TASK 3 - Student Marks Dashboard");
+        const students = [
+            { id: 1, name: "Ravi", mark: 80 },
+            { id: 2, name: "Priya", mark: 95 },
+            { id: 3, name: "Arun", mark: 60 },
+            { id: 4, name: "Kumar", mark: 30 }
+        ]
+        let total = 0
+        let passedStudents = 0
+        let failedStudents = 0
+        let totalMark = 0
+        let averageMark = 0
+        let highstMark = students[0].mark
+
+        for(const student in students){
+            total++
+            if(students[student].mark>30){
+                passedStudents++
             }
             else{
-               console.log("not palindrome");
-               
+                failedStudents++
+            }
+        }
+        for(const mark in students){
+            totalMark += students[mark].mark
+            if(students[mark].mark > highstMark){
+                highstMark = students[mark].name
             }
         }
 
+        averageMark = totalMark / total
+        console.log("Total Students: " + total);
+        console.log("Passed Students: " + passedStudents);
+        console.log("Failed Students: " + failedStudents);
+        console.log("Average Mark: " + averageMark);
+        console.log("Highest Mark: " + highstMark );
     </script>
 </body>
+
 </html>
