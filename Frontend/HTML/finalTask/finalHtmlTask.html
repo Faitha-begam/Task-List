@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Complete Tutorial </title>
+    <link rel="icon" type="images/icon" href="../assets/images/logoImages/html-5.png">
+</head>
+
+<body>
+    <center>
+        <!------------------------------------------------------ SECTION 1 -------------------------------------------------->
+        <section>
+
+            <h1><u>Section 1 : Document Structure Tags</u></h1>
+
+            <h2>&lt;!DOCTYPE html&gt;</h2>
+
+            <p>
+                The &lt;!DOCTYPE html&gt; declaration defines the document type and tells the browser that the webpage
+                is written in HTML5.
+                It helps the browser display the webpage correctly using modern HTML standards.
+                This declaration must always appear at the top of the HTML document.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;!DOCTYPE html&gt;
+            </pre>
+
+            <hr>
+
+
+            <h2>&lt;html&gt;</h2>
+
+            <p>
+                The &lt;html&gt; tag is the root element of an HTML document.
+                All other HTML elements are written inside this tag.
+                It represents the beginning and ending of the webpage structure.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;html&gt;
+&lt;/html&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;head&gt;</h2>
+
+            <p>
+                The &lt;head&gt; tag contains information about the webpage such as title,
+                meta tags, favicon links, stylesheets, and scripts.
+                The content inside the head tag is not directly visible on the webpage.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;head&gt;
+&lt;/head&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;title&gt;</h2>
+
+            <p>
+                The &lt;title&gt; tag defines the title of the webpage displayed on the browser tab.
+                It is written inside the head section.
+                The title is also important for search engine optimization.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;title&gt;HTML Learning Page&lt;/title&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;body&gt;</h2>
+
+            <p>
+                The &lt;body&gt; tag contains all the visible content of the webpage such as headings,
+                paragraphs, images, tables, forms, videos, and links.
+                Everything displayed in the browser window is written inside the body tag.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;body&gt;
+&lt;/body&gt;
+            </pre>
+
+            <hr>
+
+        </section>
+
+        <!------------------------------------------------------ SECTION 2 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 2 : Meta Tags</u></h1>
+
+            <h2>&lt;meta charset="UTF-8"&gt;</h2>
+
+            <p>
+                The meta charset tag defines the character encoding of the webpage.
+                UTF-8 supports almost all international languages and special symbols.
+                It helps the browser correctly display text content without encoding errors.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;meta charset="UTF-8"&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;meta name="viewport"&gt;</h2>
+
+            <p>
+                The viewport meta tag makes the webpage responsive on different screen sizes
+                such as mobile phones, tablets, and desktops.
+                It helps control the page dimensions and scaling behavior.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;meta name="viewport"
+            content="width=device-width, initial-scale=1.0"&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;meta name="description"&gt;</h2>
+
+            <p>
+                The description meta tag provides a short summary about the webpage.
+                Search engines may display this description in search results.
+                It helps improve search engine optimization.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;meta name="description"
+            content="HTML5 Learning Webpage"&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;meta name="keywords"&gt;</h2>
+
+            <p>
+                The keywords meta tag specifies important keywords related to the webpage content.
+                It was mainly used by search engines to identify webpage topics.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;meta name="keywords"
+            content="HTML, CSS, JavaScript"&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;meta name="author"&gt;</h2>
+
+            <p>
+                The author meta tag specifies the name of the webpage author or creator.
+                It provides ownership information about the webpage.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;meta name="author"
+            content="Faitha Begam"&gt;
+            </pre>
+
+            <hr>
+
+            <h2>&lt;link rel="icon"&gt;</h2>
+
+            <p>
+                The favicon link tag is used to display a small icon on the browser tab.
+                It helps identify the website visually when multiple tabs are opened.
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+            &lt;link rel="icon" href="logo.png"&gt;
+            </pre>
+
+            <hr>
+
+        </section>
+
+        <!------------------------------------------------------ SECTION 3 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 3 : Text Tags</u></h1>
+
+            <h2>&lt;h1&gt; to &lt;h6&gt;</h2>
+            <p>Used to create headings from largest to smallest.</p>
+
+            <h2>&lt;p&gt;</h2>
+            <p>Used to create paragraphs in webpages.</p>
+
+            <h2>&lt;br&gt;</h2>
+            <p>Moves content to the next line.</p>
+
+            <h2>&lt;hr&gt;</h2>
+            <p>Creates a horizontal line between sections.</p>
+
+            <h2>&lt;pre&gt;</h2>
+            <p>Displays text with original spacing and line breaks.</p>
+
+            <h2>&lt;span&gt;</h2>
+            <p>Inline container used for styling small text portions.</p>
+
+            <h2>&lt;div&gt;</h2>
+            <p>Block-level container used to group elements.</p>
+
+            <h2>&lt;b&gt;</h2>
+            <p>Displays text in bold format.</p>
+
+            <h2>&lt;strong&gt;</h2>
+            <p>Defines important bold text.</p>
+
+            <h2>&lt;i&gt;</h2>
+            <p>Displays text in italic style.</p>
+
+            <h2>&lt;em&gt;</h2>
+            <p>Defines emphasized text.</p>
+
+            <h2>&lt;u&gt;</h2>
+            <p>Underlines text content.</p>
+
+            <h2>&lt;mark&gt;</h2>
+            <p>Highlights text with background color.</p>
+
+            <h2>&lt;small&gt;</h2>
+            <p>Displays smaller-sized text.</p>
+
+            <h2>&lt;del&gt;</h2>
+            <p>Represents deleted text.</p>
+
+            <h2>&lt;ins&gt;</h2>
+            <p>Represents inserted text.</p>
+
+            <h2>&lt;sup&gt;</h2>
+            <p>Displays superscript text.</p>
+
+            <h2>&lt;sub&gt;</h2>
+            <p>Displays subscript text.</p>
+
+            <h2>&lt;abbr&gt;</h2>
+            <p>Defines abbreviated text.</p>
+
+            <h2>&lt;code&gt;</h2>
+            <p>Displays programming code.</p>
+
+            <h2>&lt;kbd&gt;</h2>
+            <p>Represents keyboard input.</p>
+
+            <h2>&lt;blockquote&gt;</h2>
+            <p>Defines a long quotation section.</p>
+
+            <h2>&lt;q&gt;</h2>
+            <p>Defines short inline quotations.</p>
+
+            <h2>&lt;cite&gt;</h2>
+            <p>Represents reference or source title.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 4 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 4 : List Tags</u></h1>
+
+            <h2>&lt;ul&gt;</h2>
+            <p>Creates an unordered list with bullet points.</p>
+
+            <h2>&lt;ol&gt;</h2>
+            <p>Creates an ordered list with numbers or letters.</p>
+
+            <h2>&lt;li&gt;</h2>
+            <p>Defines list items inside ul or ol tags.</p>
+
+            <h2>&lt;dl&gt;</h2>
+            <p>Creates a description list.</p>
+
+            <h2>&lt;dt&gt;</h2>
+            <p>Defines the title in a description list.</p>
+
+            <h2>&lt;dd&gt;</h2>
+            <p>Defines description data for dt tag.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 5 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 5 : Link and Navigation Tags</u></h1>
+
+            <h2>&lt;a&gt;</h2>
+            <p>Creates hyperlinks to webpages, files, emails, or sections.</p>
+
+            <h2>&lt;nav&gt;</h2>
+            <p>Defines navigation links section in webpage.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 6 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 6 : Image and Media Tags</u></h1>
+
+            <h2>&lt;img&gt;</h2>
+            <p>Displays images in webpages.</p>
+
+            <h2>&lt;figure&gt;</h2>
+            <p>Groups media content with caption.</p>
+
+            <h2>&lt;figcaption&gt;</h2>
+            <p>Defines caption for figure element.</p>
+
+            <h2>&lt;audio&gt;</h2>
+            <p>Embeds audio files into webpage.</p>
+
+            <h2>&lt;video&gt;</h2>
+            <p>Embeds video files into webpage.</p>
+
+            <h2>&lt;source&gt;</h2>
+            <p>Specifies media source for audio or video.</p>
+
+            <h2>&lt;track&gt;</h2>
+            <p>Adds subtitles or captions to media.</p>
+
+            <h2>&lt;iframe&gt;</h2>
+            <p>Embeds another webpage inside webpage.</p>
+
+            <h2>&lt;embed&gt;</h2>
+            <p>Embeds external applications or media.</p>
+
+            <h2>&lt;object&gt;</h2>
+            <p>Embeds multimedia objects in webpage.</p>
+
+            <h2>&lt;marquee&gt;</h2>
+            <p>Creates scrolling text or images.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 7 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 7 : Table Tags</u></h1>
+
+            <h2>&lt;table&gt;</h2>
+            <p>Creates a table to organize data into rows and columns.</p>
+
+            <h2>&lt;tr&gt;</h2>
+            <p>Defines a row inside a table.</p>
+
+            <h2>&lt;th&gt;</h2>
+            <p>Defines heading cells in a table. Text appears bold and centered by default.</p>
+
+            <h2>&lt;td&gt;</h2>
+            <p>Defines normal data cells inside table rows.</p>
+
+            <h2>&lt;caption&gt;</h2>
+            <p>Provides a title or caption for the table.</p>
+
+            <h2>&lt;thead&gt;</h2>
+            <p>Groups table header content.</p>
+
+            <h2>&lt;tbody&gt;</h2>
+            <p>Groups the main table body content.</p>
+
+            <h2>&lt;tfoot&gt;</h2>
+            <p>Groups footer content in a table.</p>
+
+            <h2>&lt;colgroup&gt;</h2>
+            <p>Groups multiple columns for styling purposes.</p>
+
+            <h2>&lt;col&gt;</h2>
+            <p>Defines column properties inside colgroup.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 8 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 8 : Form Tags</u></h1>
+
+            <h2>&lt;form&gt;</h2>
+            <p>
+                Creates a form to collect user input such as login details,
+                feedback, registration data, and more.
+            </p>
+
+            <h2>&lt;label&gt;</h2>
+            <p>Defines labels for form elements.</p>
+
+            <h2>&lt;input&gt;</h2>
+            <p>
+                Creates input fields for user data.
+                Different input types provide different functionalities.
+            </p>
+
+            <h2>&lt;input type="text"&gt;</h2>
+            <p>Creates a single-line text input field.</p>
+
+            <h2>&lt;input type="password"&gt;</h2>
+            <p>Creates a hidden password input field.</p>
+
+            <h2>&lt;input type="email"&gt;</h2>
+            <p>Accepts only valid email addresses.</p>
+
+            <h2>&lt;input type="number"&gt;</h2>
+            <p>Accepts numeric values only.</p>
+
+            <h2>&lt;input type="date"&gt;</h2>
+            <p>Allows users to select dates.</p>
+
+            <h2>&lt;input type="time"&gt;</h2>
+            <p>Allows users to select time.</p>
+
+            <h2>&lt;input type="radio"&gt;</h2>
+            <p>Creates single-choice selection options.</p>
+
+            <h2>&lt;input type="checkbox"&gt;</h2>
+            <p>Creates multiple-choice selection options.</p>
+
+            <h2>&lt;input type="file"&gt;</h2>
+            <p>Allows users to upload files.</p>
+
+            <h2>&lt;input type="color"&gt;</h2>
+            <p>Opens a color picker.</p>
+
+            <h2>&lt;input type="range"&gt;</h2>
+            <p>Creates a slider input control.</p>
+
+            <h2>&lt;input type="submit"&gt;</h2>
+            <p>Submits form data.</p>
+
+            <h2>&lt;textarea&gt;</h2>
+            <p>Creates a multi-line text input area.</p>
+
+            <h2>&lt;select&gt;</h2>
+            <p>Creates a dropdown list.</p>
+
+            <h2>&lt;option&gt;</h2>
+            <p>Defines options inside select tag.</p>
+
+            <h2>&lt;optgroup&gt;</h2>
+            <p>Groups related options inside dropdown lists.</p>
+
+            <h2>&lt;button&gt;</h2>
+            <p>Creates clickable buttons.</p>
+
+            <h2>&lt;fieldset&gt;</h2>
+            <p>Groups related form elements together.</p>
+
+            <h2>&lt;legend&gt;</h2>
+            <p>Provides title for fieldset section.</p>
+
+            <h2>&lt;datalist&gt;</h2>
+            <p>
+                Provides predefined suggestions for input fields while still allowing custom values.
+            </p>
+
+            <h2>&lt;output&gt;</h2>
+            <p>Displays calculation or result output.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 9 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 9 : Semantic Tags</u></h1>
+
+            <h2>&lt;header&gt;</h2>
+            <p>Defines the top section of a webpage or section.</p>
+
+            <h2>&lt;nav&gt;</h2>
+            <p>Defines navigation links section.</p>
+
+            <h2>&lt;main&gt;</h2>
+            <p>
+                Represents the main important content of the webpage.
+                Search engines use this tag to identify primary content.
+            </p>
+
+            <h2>&lt;section&gt;</h2>
+            <p>Groups related content into sections.</p>
+
+            <h2>&lt;article&gt;</h2>
+            <p>
+                Defines independent content such as blogs, news articles, or posts.
+            </p>
+
+            <h2>&lt;aside&gt;</h2>
+            <p>Represents sidebar or extra related content.</p>
+
+            <h2>&lt;footer&gt;</h2>
+            <p>Defines the bottom section of webpage or section.</p>
+
+            <h2>&lt;details&gt;</h2>
+            <p>Creates expandable and collapsible content.</p>
+
+            <h2>&lt;summary&gt;</h2>
+            <p>Defines visible heading for details tag.</p>
+
+            <h2>&lt;time&gt;</h2>
+            <p>Represents date and time information.</p>
+
+            <h2>&lt;address&gt;</h2>
+            <p>Defines contact information of author or organization.</p>
+
+            <h2>&lt;mark&gt;</h2>
+            <p>Highlights important text content.</p>
+
+        </section>
+
+        <hr>
+
+        <!------------------------------------------------------ SECTION 9 -------------------------------------------------->
+
+        <section>
+
+            <h1><u>Section 15 : Interactive Tags</u></h1>
+
+            <h2>&lt;details&gt;</h2>
+            <p>
+                Creates expandable and collapsible content sections.
+            </p>
+
+            <h2>&lt;summary&gt;</h2>
+            <p>
+                Defines the visible heading for details tag.
+            </p>
+
+            <h2>&lt;dialog&gt;</h2>
+            <p>
+                Creates popup dialog boxes in webpages.
+            </p>
+
+        </section>
+         <hr>
+
+    </center>
+</body>
+
+</html>

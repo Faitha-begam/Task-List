@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Events</title>
+</head>
+
+<body>
+    <!-- TASK 1 -->
+     <h2>1. When the user enters a hero name and clicks the button, display the hero name inside an &lt; h2 &gt; tag</h2>
+     <label for="heroname">Enter Hero Name</label>
+    <input type="text" id="heroname">
+    <h2 id="heronameh2">RESULT</h2>
+    <button onclick="changeHeader()">Change</button>
+
+
+    <!-- TASK 2, 3 -->
+     <h2>2. When the button is clicked, hide the paragraph.</h2>
+     <h2> and When the button is clicked, show the hidden paragraph.</h2>
+    <p style="display: block; background-color: aqua;" id="tasktwopara">Technology has become an essential part of our
+        daily lives. It helps people communicate
+        instantly, learn new skills online, and complete tasks more efficiently. Students use technology to attend
+        virtual classes, research information, and develop practical skills such as programming and web development.
+        Businesses rely on technology to manage their operations, connect with customers, and improve productivity. As
+        technology continues to evolve, learning new tools and adapting to changes become important for personal and
+        professional growth.</p>
+    <button onclick="hidePara()">hide para</button>
+    <button onclick="showPara()">show para</button>
+
+    <!-- TASK 4 -->
+     <h2>4.Implement Toggle functionality:</h2>
+    <p id="taskfourpara">Reading books is one of the best ways to gain knowledge and improve vocabulary. Books allow us to explore
+        different cultures, learn from successful people, and understand various perspectives. Regular reading also
+        strengthens concentration, enhances imagination, and improves communication skills. Whether it's fiction,
+        biographies, or educational books, every book offers valuable lessons. Developing the habit of reading for even
+        a few minutes each day can have a positive impact on both personal growth and academic success.</p>
+    <button id="taskfourbtn" onclick="showHide()">Hide</button> <br> <br>
+
+
+    <!-- TASK 5 -->
+     <h2>5.Role Based Validation. Admin Only Allowed </h2>
+     <label for="name">Enter Login User Name</label>
+    <input id="taskfiveinput" type="text" placeholder="Enter Your Name ">
+    <p id="taskfivepara">login result</p>
+    <button onclick="loginUser()">Login</button> <br> <br>
+
+
+    <!-- TASK 6 -->
+     <h2>6.Check Password Strength</h2>
+     <label for="password">Enter Your Password</label>
+     <input onchange="plength()" id="tasksixinput" type="password" placeholder="Enter Your password">
+     <p id="tasksixp"></p> <br>
+
+    
+    <!-- Task 7 -->
+     <h2>7.Display the full name in an &lt; h2 &gt; tag after clicking a button.</h2>
+     <label for="FirstName">Enter Your First Name</label>
+    <input type="text"  id="taskseveninputone" placeholder="Enter Your FirstName"> <br> <br>
+    <label for="LastName">Enter Your Last Name</label>
+    <input type="text"  id="taskseveninputwo" placeholder="Enter Your SecondName"> <br> <br>
+    <h2 id="tasksevenh">Full Name : </h2>
+    <button onclick="mergeName()">Merge Name</button>
+    
+    
+    <!-- Task 8 -->
+     <h2>8.When the button is clicked, change the image.</h2>
+    <img id="catImageOne" src="../assets/images/common/sleepyCat.png" height="200px" width="200px" alt=""> <br> <br>
+     <p id="taskeightp"></p>
+    <button onclick="wake()"> don't WakeMee Up</button>
+   
+    
+     <!-- Task 9 -->
+      <h2>9.Change Text and Color</h2>
+    <h2 id="tasknineh" style="color: blue;">Task 9 Heading </h2>
+    <button onclick="change()">change</button> <br> <br>
+
+     <!-- Task 10 -->
+    <h2>10.check whether the input is empty or not</h2>
+    <input type="text" id="taskteninput"> <br> <br> 
+    <button onclick="check()">check</button> 
+    <p id="tasktenp"></p>
+
+
+    <!-- Task 11 -->
+     <h2>11.Every click should increase a counter value.</h2>
+     <h2 id="lastTaskH">count : 0</h2>
+     <button onclick="increase()">Click to Increae</button>
+
+    <script src="domEventsScript.js">
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Change Image</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <img id="hero" src="../assets/images/common/bulbOff.jpg" class="h-90 w-90" />
+    <button class="bg-blue-400 rounded ml-30 mt-10 p-2" onclick="changeImage()">click to change</button>
+
+    <script>
+        const changeImage =()=>{
+        const getImage = document.querySelector("#hero")
+        getImage.src = "../assets/images/common/bulbOn.jpg"
+        }
+    </script>
+</body>
+</html>

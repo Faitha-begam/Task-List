@@ -1,0 +1,358 @@
+<script>
+    // map() Tasks
+    const heroes = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+    ]
+    const upper = heroes.map((e,i)=>{
+       return e.toUpperCase()
+    })
+    console.log(upper);
+    
+    
+    
+    
+     // Task 2
+    const collections = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+   ]
+   const mul = collections.map((e,i)=>e*10)
+   console.log(mul);
+   
+   
+   
+   
+   // Task 3    
+   const movies = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+  ]   
+  const add = movies.map((e,i)=>"Movie: " + e)
+  console.log(add);
+
+  
+  
+  
+  
+  // filter() Tasks
+  // Task 4
+  const collection = [
+
+   100,
+
+   500,
+
+   800,
+
+   200,
+
+   900
+  ]
+  const greaterFH = collection.filter((e,i)=>e>500)
+  console.log("Values Greater Than 500 Are: " + greaterFH);
+     
+  
+  
+  
+  //Task 5
+  const marks = [
+
+   35,
+
+   80,
+
+   20,
+
+   90,
+
+   45
+   ]
+   const passedStudent = marks.filter((marks,i)=> marks>= 35) 
+   console.log(passedStudent);
+    
+    
+   
+   
+   // Task 6
+    const heros = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "SK",
+
+   "Suriya"
+   ]
+const lengthy = heros.find((e,i)=>{
+    return 4>e.length
+})
+console.log(lengthy);
+
+   
+
+
+// Task 7
+   const heroes2 = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+   ]
+   const find = heroes2.find((e,i)=>e==="Ajith")
+   console.log(`Found ${find}`); 
+
+   
+   
+   
+   //Task 8
+   const collections2 = [
+
+   100,
+
+   500,
+
+   800,
+
+   200
+   ]    
+   const greaterCollection = collections2.find((e,i)=>e>400)
+   console.log(greaterCollection)
+
+   
+   
+   
+   //findIndex() Tasks
+   //Task 9
+   const heroes3 = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+    ]    
+    const findIndex = heroes3.findIndex((e,i)=> e === "Suriya")
+    console.log(findIndex)
+
+    
+    
+    
+    // Task 10
+    const movies2 = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+    ]
+    const findMovie = movies2.findIndex((e,i)=>e === "Leo")
+    console.log(findMovie);
+    
+    
+    
+    
+    
+    // some() Tasks
+    // Task 11
+    const marks2 = [
+
+   35,
+
+   80,
+
+   20,
+
+   90
+   ]
+   const findMark = marks2.some((mark,i)=>mark < 35)
+   console.log(findMark);
+
+    
+   
+   
+   //Task 12
+   const collections3 = [
+
+   100,
+
+   200,
+
+   900
+   ]
+   const blockBusterMovie = collections3.some((e,i)=>e>800)
+   console.log(blockBusterMovie)
+    
+   
+   
+   
+   //every() Tasks
+   // Task 13
+   const marks3 = [
+
+   50,
+
+   70,
+
+   90,
+
+   40
+   ]
+   const passed = marks3.every((mark,i)=>mark>35)   
+   console.log(passed);
+   
+
+   
+   
+   //Task 14
+    const ages = [
+
+   20,
+
+   25,
+
+   30,
+
+   35
+   ]
+   const greaterAge = ages.every((age,i)=>age>18) 
+   console.log(greaterAge)
+      
+   
+   
+   
+   
+   // reduce() Tasks
+   // Task 15
+   const collections4 = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+   ]
+   const sum = collections4.reduce((acc,curr)=>acc+curr)
+   console.log(sum)
+
+   
+   
+   
+   // Array of Objects Tasks - Task 18
+   const students = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+   ]
+   const studentNames = students.map((e,i)=>e.name)
+   console.log(studentNames);
+
+
+   
+   
+   
+   //Task 19
+   const students1 = [
+
+   {
+      id:1,
+      age:20
+   },
+
+   {
+      id:2,
+      age:30
+   },
+
+   {
+      id:3,
+      age:18
+   }
+   ]
+   const bigAge = students1.filter((e,i)=>e.age>20)
+   console.log(bigAge);
+   
+   
+   
+   
+   // Task 20
+    const students2 = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+   ]
+   const findID = students2.find((e,i)=>e.id == "2")
+   console.log(findID)
+
+   
+   
+   
+   //Task 21
+   let arr = [100,500,800,200]
+   const highestNumber = arr.reduce((acc,curr)=>{
+    if(acc>curr){
+      return acc  
+    }
+    else{
+        return curr
+    }
+   })    
+   console.log (highestNumber)
+   
+   
+   
+   
+   // Task 22 - Using reduce() Find lowest number from:
+   let arr2 = [100,500,800,200]
+   const highestNumber2 = arr2.reduce((acc,curr)=>{
+    if(acc<curr){
+      return acc  
+    }
+    else{
+        return curr
+    }
+   })    
+   console.log (highestNumber2)
+
+    
+   
+   //Task 23 - Using filter() Display only even numbers.
+    const arr3 = [10,15,20,25,30]
+    const eveNumber = arr3.filter((e,i)=>e%2==0)
+    console.log(eveNumber);
+    
+</script>

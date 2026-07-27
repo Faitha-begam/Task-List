@@ -1,0 +1,87 @@
+<script>
+// Task 1 – push() Method
+let array = ["HTML","CSS","JavaScript"]
+array.push("React","Node.js")
+console.log("Updated Array: " + array);
+
+
+// Task 2 – pop() Method
+let arr = ["HTML","CSS","JavaScript","React"]
+let removed = arr.pop()
+console.log("Removed Value: " + removed + "  " + " Updated Array After Popped The Value: " + arr);
+
+// Task 3 – shift() Method
+let fruits = ["Apple","Mango","Orange","Banana"]
+let removedFruit = fruits.shift()
+console.log("After Shift: " + " " + removedFruit);
+
+// Task 4 – unshift() Method
+let heros = ["Ajith","Suriya","SK"]
+let newHero = heros.unshift("Vijay")
+newHero = heros.unshift("Dhanush")
+console.log("After Unshift: " + heros);
+
+// Task 5 – splice() Method
+let techs = ["HTML","CSS","Bootstrap","React"]
+techs.splice(2,1,"JavaScript")
+console.log("After Splice:" + " " + techs);
+
+// Task 6 – slice() Method
+let tech = ["HTML","CSS","JavaScript","React","Node"]
+const newTech = tech.slice(2,4)
+console.log("After Slice:" + " " + newTech);
+
+// Task 7 – Object Looping
+let student = {
+
+   name:"Sudhan",
+
+   course:"MERN",
+
+   city:"Chennai",
+
+   age:25
+
+}
+for(const values in student){
+  console.log( values + " : " + student[values]);
+  
+}
+
+// Task 8 – Array of Objects Looping
+let heroWithMovies = [
+   {
+      name:"Vijay",
+      movie:"GOAT"
+   },
+
+   {
+      name:"Ajith",
+      movie:"Vidaamuyarchi"
+   },
+
+   {
+      name:"Suriya",
+      movie:"Kanguva"
+   }
+]
+for(const movie in heroWithMovies){
+    console.log( heroWithMovies[movie].name + "-" + heroWithMovies[movie].movie);
+    
+}
+
+// Task 9 – join() Method
+let heros2 = ["Vijay","Ajith","Suriya","SK"]
+const joinHeros = heros2.join(" | ")
+console.log(joinHeros);
+ 
+
+//  Task 10 – includes() Method
+let techs2 = ["HTML","CSS","JavaScript","React"]
+if( techs.includes("React")){
+    console.log("Course Found");
+}else{
+    console.log("Course Not Found");
+}
+
+</script>

@@ -1,0 +1,105 @@
+<script>
+    console.log('task 1 - Greet Message...');
+    
+    function greet(){
+        console.log('Welcome To JavaScript');
+    }
+    greet()
+
+    console.log('task 2 - Display Name');
+    
+    function showName(){
+        let name = 'faitha'
+        console.log(name);
+    }
+    showName()
+
+    console.log('task 3 - Addition');
+    function addNumbers(){
+        let addedValue = 10 + 20
+        console.log(addedValue);
+    }
+    addNumbers()
+
+    console.log('task 4 - Square of 5');
+    function square(){
+        let squareValue = 5**2
+        console.log(squareValue);
+    }
+    square()
+
+    console.log('task 5 - Student Info');
+    function studInfo(){
+        let name = 'jo'
+        let course = 'FullStack'
+        let city = 'chennai'
+        console.log('name: ' + name + " course: " + course + " city: " + city);
+    }
+    studInfo()
+    
+
+    console.log('ARRAY TASKS:');
+    console.log('task 6 - 5 Fruits');
+    
+    let arr = ['blue berry', 'lichi', 'grape', 'mango', 'kiwi']
+    console.log(arr);
+    
+    console.log('task 7 - 5 students');
+    let studentNames = [ 'danish', 'ayaan', 'zaym', 'kavin', 'guna']
+    console.log(studentNames[0]);
+    
+    console.log('task 8 - display last value');
+    let array = [10,20,30,40,50]
+    let lastValue = array.length-1
+    console.log(array[lastValue]);
+    
+    console.log('task 10 - display 5 colors using for loop');
+    let colors = ['black', 'beige', 'white', 'blue', 'lilac']
+    for(let a = 0; a <= colors.length-1;  a++){
+        console.log(colors[a]);
+    }
+
+    console.log('task 11 - Object Tasks - create student object');
+    let studentDetail = {name:"faitha", age:21, course:"FullStack"}
+    console.log(studentDetail);
+    
+
+    console.log('task 12 - Object Tasks - create Employee object');
+    let empDetail = {name:"faitha", Id: 0123, profession:"employee"}
+    console.log(empDetail.name);
+
+
+    console.log('task 13 - Object Tasks - Create a mobile object.');
+    let mobileDetails = {brand:"samsung", model:"galaxy S25 FE", price: 99000}
+    console.log(mobileDetails["price"]);
+
+    console.log('task 14 - Object Tasks - Create a car object.');
+    let carObject = {name:"BMW", brand:"BMW", Model:"M5"}
+    console.log(carObject.brand);
+    console.log(carObject.Model);
+
+    
+
+    console.log('task 15 - Object Tasks - Create a college object.');
+    let collegeDetails = {
+        college:'vv college', 
+        location:'thoothukudi', 
+        students:2000
+    }
+    console.log(collegeDetails.college);
+    console.log(collegeDetails.location)
+    console.log(collegeDetails.students)
+    
+
+    console.log('task 15 - Mini Project');
+    function showStudent(){
+        let newArray = ["Sudhan","Rahul","Kumar"]
+        let newObject = {
+            course:"MERN",
+            duration:"6 Months"
+        }
+        console.log(newArray);
+        console.log(newObject);
+    }
+    showStudent()
+</script>

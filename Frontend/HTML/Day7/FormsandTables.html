@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <title>Forms || Tables </title>
+</head>
+
+<body>
+    <center>
+        <!-- Student Registration Form  -->
+        <form>
+            <h2>Student Registration Form</h2>
+
+            <label>Student Name:</label>
+            <input type="text" required> <br><br>
+
+            <label>Email:</label>
+            <input type="email" required> <br><br>
+
+            <label>Password:</label>
+            <input type="password" required> <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female <br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript <br><br>
+
+            <label>Department:</label>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+            </select> <br><br>
+
+            <label>Address:</label> <br>
+            <textarea rows="4" cols="30"></textarea> <br><br>
+
+            <input type="submit">
+        </form>
+        <hr>
+
+        <!-- Employee Details Table -->
+
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <th rowspan="2">Employee ID</th>
+                <th rowspan="2">Employee Name</th>
+                <th colspan="2">Department Details</th>
+            </tr>
+
+            <tr>
+                <th>Department</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>HR</td>
+                <td>Chennai</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Anitha</td>
+                <td>IT</td>
+                <td>Bangalore</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Ajay</td>
+                <td>Employee</td>
+                <td>Chennai</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Vikram</td>
+                <td>Employee</td>
+                <td>Coimbatore</td>
+            </tr>
+
+        </table>
+        <hr>
+
+        <!-- Login and Signup Form -->
+
+
+        <form>
+
+            <h2>Login Form</h2>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter Email" required> <br><br>
+
+            <label>Password:</label>
+            <input type="password" minlength="6" maxlength="12" placeholder="Enter Password" required> <br><br>
+
+            <button type="submit">Login</button>
+
+
+
+            <h2>Signup Form</h2>
+
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" minlength="3" required> <br><br>
+
+            <label>Mobile Number:</label>
+            <input type="tel" maxlength="10" placeholder="Enter Mobile Number" required> <br><br>
+
+            <label>Create Password:</label>
+            <input type="password" minlength="6" maxlength="15" required> <br><br>
+
+            <button type="submit">Signup</button>
+
+        </form>
+        <hr>
+
+        <!-- College Admission Form -->
+
+        <form>
+
+            <fieldset>
+
+                <legend>College Admission Form</legend>
+
+                <label>Student Name:</label>
+                <input type="text"> <br><br>
+
+                <label>Select Course:</label>
+
+                <select>
+
+                    <optgroup label="Engineering">
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>Mechanical</option>
+                    </optgroup>
+
+                    <optgroup label="Arts & Science">
+                        <option>BCA</option>
+                        <option>B.Sc</option>
+                        <option>B.Com</option>
+                    </optgroup>
+
+                </select> <br><br>
+
+                <label>City:</label>
+                <input type="text"> <br><br>
+
+                <button type="submit">Apply Now</button>
+
+            </fieldset>
+
+        </form>
+
+        <!-- Product Details Table -->
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../assets/images/products/laptop.jpg" width="100">
+                </td>
+
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td>Available</td>
+                <td>10</td>
+                <td>₹55,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../assets/images/products/shoes.webp" width="100">
+                </td>
+
+                <td>Shoes</td>
+                <td>Fashion</td>
+                <td>Available</td>
+                <td>25</td>
+                <td>₹2,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../assets/images/products/cctv.jpg" width="100">
+                </td>
+
+                <td>CCTV Camera</td>
+                <td>Electronics</td>
+                <td>Available</td>
+                <td>15</td>
+                <td>₹5,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../assets/images/products/headphones.jpg" width="100">
+                </td>
+
+                <td>Headphones</td>
+                <td>Electronics</td>
+                <td>Available</td>
+                <td>5</td>
+                <td>₹10,000</td>
+            </tr>
+        </table>
+
+
+        <!-- Resume Builder Form -->
+
+        <form>
+
+            <h2>Resume Builder Form</h2>
+
+            <fieldset>
+
+                <legend>Personal Details</legend>
+
+                <label>Full Name:</label>
+                <input type="text"> <br><br>
+
+                <label>Email:</label>
+                <input type="email"> <br><br>
+
+                <label>Phone Number:</label>
+                <input type="tel"> <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Education Details</legend>
+
+                <label>College Name:</label>
+                <input type="text"> <br><br>
+
+                <label>Degree:</label>
+                <input type="text"> <br><br>
+
+                <label>CGPA:</label>
+                <input type="number"> <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Skills</legend>
+
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JavaScript
+                <input type="checkbox"> React
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Experience</legend>
+                <textarea rows="5" cols="40"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Upload Resume</legend>
+                <input type="file">
+
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit Resume</button>
+
+        </form>
+
+    </center>
+</body>
+
+</html>
